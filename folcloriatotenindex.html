@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>¿Qué leyenda vive en ti? · Folcloria</title>
+  <meta name="description" content="Responde unas preguntas del bosque y descubre qué leyenda de Folcloria vive en ti.">
+  <meta name="theme-color" content="#1f8a4c">
+  <!-- Tablet: al agregar a la pantalla de inicio se abre a pantalla completa -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Folcloria">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <main id="screen" class="screen" aria-live="polite"></main>
+
+    <!-- Confirmación para salir (en vez del cuadro nativo del navegador) -->
+    <div class="modal" id="modal" hidden>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <h2 id="modalTitle">¿Salir del juego?</h2>
+        <p>Se perderá este turno.</p>
+        <div class="btn-row">
+          <button class="btn btn-secondary" data-act="exit-no">Seguir jugando</button>
+          <button class="btn btn-primary" data-act="exit-yes">Salir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+
+  <!-- Aviso si la tablet está en vertical -->
+  <div id="rotate" role="alert">
+    <div class="rot-icon" aria-hidden="true">🔄</div>
+    <h2>Gira la tablet</h2>
+    <p>Este juego se juega con la pantalla en horizontal.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
