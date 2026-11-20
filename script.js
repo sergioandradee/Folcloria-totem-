@@ -1,5 +1,5 @@
 /* ==========================================================
-   FOLCLORIA — Juego "¿Qué leyenda vive en ti?"
+   FOLCLORIA — Juego "¿Qué leyenda vive en vos?"
    1) CONFIG: imágenes, leyendas, preguntas y textos (editar aquí).
    2) Lógica del juego: jugadores, preguntas, resultado, familia, figurita.
    Sin cuentas ni servidores: todo queda en el aparato.
@@ -221,7 +221,7 @@ function renderIntro() {
       </section>
       <section class="intro-right">
         <div class="card">
-          <h1>¿Qué leyenda vive en ti?</h1>
+          <h1>¿Qué leyenda vive en vos?</h1>
           <p>Responde unas preguntas del bosque y descubre cuál de las leyendas de Folcloria se parece más a ti. ¡Pueden jugar niños y grandes!</p>
           <button class="btn btn-primary btn-xl" data-act="play">Jugar</button>
         </div>
